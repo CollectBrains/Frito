@@ -1,0 +1,111 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header-content
+		.btn-white
+			margin-top: 20px
+
+	footer
+		.top-line
+			.logo
+				float: left
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.top-line
+		.button
+			&.btn-green
+				margin-right: 40px
+
+	.header-content
+		.h1
+			font-size: 48px
+		.btn-white
+			margin-top: 20px
+
+	.about__wrap
+		margin-left: 0
+
+	.service
+		margin-bottom: 50px
+		&__text
+			padding: 0
+
+	.feed-item
+		&__wrap
+			padding: 2% 5%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.line-above
+		text-align: center
+		&__text
+			margin-top: 10px
+		&__soc
+			float: left
+			margin-top: 10px
+
+	.header-content
+		.h1
+			font-size: 46px
+
+	.s-teasers__wrap
+		.s-teaser__item
+			text-align: center
+			margin-bottom: 50px
+
+	.about__wrap
+		&--sign
+			margin-top: -90px
+			margin-left: 140px
+
+	.purchase
+		.h2-wrap
+			padding-top: 13%
+
+	.news-item
+		text-align: center
+
+	.form
+		&__wrap
+			margin-bottom: 30px
+		.form__center
+			text-align: center
+			margin: auto
+			button
+				float: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.line-above
+		text-align: center
+		&__text
+			float: none
+		&__soc
+			float: none
+
+	.header-content
+		.h1
+			font-size: 36px
+
+	.about__wrap
+		&--sign
+			margin-top: 0
+			display: none
+		.btn-gray
+			margin-top: 80px
+
+	.price__item
+		margin-top: 40px
+		&--num
+			font-size: 50px
+	.price
+		.btn-wrap
+			margin-top: 30px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
