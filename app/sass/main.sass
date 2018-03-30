@@ -116,12 +116,12 @@ body
 		text-decoration: none
 		color: #ffffff
 	&.btn-green
-		background-color: #06d56c
+		background-color: $accent
 		float: right
 		position: relative
 		transition: all .3s ease
 		&:hover
-			background-color: darken(#06d56c, 6%)
+			background-color: darken($accent, 6%)
 	&.btn-white
 		border: 2px solid #ffffff
 		text-transform: none
@@ -219,7 +219,7 @@ body
 	width: 100%
 	z-index: 2
 	margin-top: 20px
-	background-color: #06d56c
+	background-color: $accent
 	text-align: center
 	display: none
 	> ul
@@ -230,38 +230,43 @@ body
 				a
 					padding-right: 18px
 			> a:hover
-				background-color: darken(#06d56c, 3%)
+				background-color: darken($accent, 3%)
 				text-decoration: none
 
 .header-content
 	padding: 15% 0
+	animation-delay: 2s
 	.welcome
 		font-size: 24px
 		font-weight: 400
 		color: #9a9a9a
 		margin-bottom: 0
+		animation-delay: 0.5s
 	.h1
 		font-size: 60px
 		line-height: 1.25
 		font-weight: 600
 		color: #ffffff
 		margin-top: 30px
+		animation-delay: 0.5s
 		span
-			color: #06d56c
+			color: $accent
 	.btn-white
 		margin-top: 50px
 		margin-bottom: 60px
+		animation-delay: 1s
 
 //-------------teaser--------------
 
 .s-teasers
 	padding: 185px 0 150px
-	.h2
+	.h2, .anim-1
 		color: #0c1423
 		display: inline-block
 		font-size: 40px
 		line-height: 1.5
 		font-weight: 500
+		animation-delay: 0.5s
 		span
 			background-color: rgba(#17d587, .2)
 			border-bottom: 4px solid #acf0d4
@@ -275,6 +280,7 @@ body
 		margin-top: 140px
 
 .s-teaser__item
+	animation-delay: 0.5s
 	&--img
 		font-size: 80px
 	&--top
@@ -301,9 +307,11 @@ body
 		right: 0
 		min-width: 100%
 		min-height: 100%
+		animation-delay: 0.5s
 
 .about__wrap
 	margin-left: 50px
+	animation-delay: 0.5s
 	&--head
 		color: #0c1423
 		opacity: .3
@@ -369,7 +377,7 @@ body
 	&__img
 		font-size: 70px
 		opacity: 1
-		color: #06d56c
+		color: $accent
 	&__title
 		margin-top: 10px
 		font-weight: 600
@@ -396,15 +404,26 @@ body
 		padding: 0
 
 .gallery__item
+	position: relative
+	overflow: hidden
+
+	&:hover
+		.gallery__item--img img
+			transform: scale(1.2)
 	&--img
+		transform: scale(0.9)
+		transition: all .3s
 		img
 			max-width: 100%
 			display: block
+			transition: all .3s
 
 //-------------price----------------=--
 
 .price
 	padding: 170px 0
+	&__left
+		animation-delay: 0.5s
 	.head-text
 		text-align: left
 	.head-title
@@ -442,12 +461,12 @@ body
 		text-decoration: none
 		color: #ffffff
 	&-green
-		background-color: #06d56c
+		background-color: $accent
 		transition: all .3s ease
 		line-height: 1.6
 		font-size: 17px
 		&:hover
-			background-color: darken(#06d56c, 6%)
+			background-color: darken($accent, 6%)
 	&-gray
 		text-transform: none
 		font-size: 16px
@@ -461,6 +480,7 @@ body
 			color: inherit
 
 .price__item
+	animation-delay: 0.5s
 	&--title
 		font-size: 20px
 		font-weight: 500
@@ -491,22 +511,25 @@ body
 			margin-bottom: 16px
 	&--link
 		font-size: 18px
-		color: #06d56c
+		color: $accent
 		font-weight: 500
 		display: block
 		text-transform: uppercase
 		text-align: center
 		&:hover, &:focus
 			text-decoration: none
-			color: darken(#06d56c, 10%)
+			color: darken($accent, 10%)
 
 //-------------feedback--------------
 
 .feedback
 	padding-bottom: 155px
+	.anim-f
+		animation-delay: 0.5s
 
 .feed-item
 	margin-top: 85px
+	animation-delay: 0.5s
 	&__wrap
 		border: 1px solid #a2a4a7
 		border-radius: 6px
@@ -590,6 +613,9 @@ body
 		margin-bottom: 20px
 	.arrow
 		padding-left: 0
+
+.anim-news-item
+	animation-delay: 0.5s
 
 .brands
 	margin-top: 100px

@@ -1,5 +1,31 @@
 $(function() {
 
+	wayCss($(".h1"), 'fadeInUp');
+	wayCss($(".welcome"), 'fadeInDown');
+	wayCss($(".btn-white"), 'fadeInLeft');
+	wayCss($(".h2"), 'fadeInRight');
+	wayCss($(".s-teaser__item"), 'fadeInRight');
+	wayCss($(".price__item"), 'fadeInRight');
+	wayCss($(".side-img"), 'fadeInLeft');
+	wayCss($(".about__wrap"), 'fadeInRight');
+	wayCss($(".anim-s"), 'fadeInLeft');
+	wayCss($(".service__item"), 'fadeInRight');
+	wayCss($(".price__left"), 'fadeInLeft');
+	wayCss($(".anim-f"), 'fadeInLeft');
+	wayCss($(".feed-item"), 'fadeInRight');
+	wayCss($(".anim-purchase"), 'fadeInLeft');
+	wayCss($(".anim-purchase-btn"), 'fadeInRight');
+	wayCss($(".anim-news"), 'fadeInLeft');
+	wayCss($(".anim-news-item"), 'fadeInRight');
+	wayCss($(".anim-sub"), 'fadeInLeft');
+	wayCss($(".anim-form"), 'fadeInRight');
+
+	function wayCss(jclass, anim) {
+		jclass.waypoint(function () {
+			jclass.addClass('animated ' + anim)
+		}, {offset: "100%"})
+	}
+
 	$(".gallery__item--img").magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
@@ -9,7 +35,6 @@ $(function() {
 		}
 
 	});
-
 
 	// Select all links with hashes
 	$('a[href*="#"]')
@@ -64,5 +89,7 @@ $(function() {
 		$(".main-nav").slideToggle();
 		return false;
 	});
+
+
 
 });
