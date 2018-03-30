@@ -1,0 +1,101 @@
+//-------------price----------------=--
+
+.price
+	padding: 170px 0
+	&__left
+		animation-delay: 0.5s
+	.head-text
+		text-align: left
+	.head-title
+		text-align: left
+		font-weight: 500
+		line-height: 1.375
+	&__text
+		font-size: 18px
+		color: #a2a4a7
+		line-height: 1.7
+	&__link
+		color: $blueColor
+		text-decoration: none
+		border-bottom: 3px solid #d1f7e7
+		line-height: 0.7
+		&:hover, &:focus
+			text-decoration: none
+			color: inherit
+
+.btn-wrap
+	float: left
+
+.tab
+	display: inline-block
+	padding: 8px 30px
+	font-weight: 500
+	font-size: 0
+	line-height: 0
+	color: #ffffff
+	text-transform: uppercase
+	text-decoration: none
+	border-radius: 6px 0 0 6px
+	background-color: transparent
+	&:hover, &:focus
+		text-decoration: none
+		color: #ffffff
+	&-green
+		background-color: $accent
+		transition: all .3s ease
+		line-height: 1.6
+		font-size: 17px
+		&:hover
+			background-color: darken($accent, 6%)
+	&-gray
+		text-transform: none
+		font-size: 16px
+		margin-left: -5px
+		line-height: 1.6
+		color: #000
+		border: 2px solid #eeeeee
+		border-radius: 0 6px 6px 0
+		&:hover, &:focus
+			background-color: rgba(#f6efef, .5)
+			color: inherit
+
+.price__item
+	animation-delay: 0.5s
+	&--title
+		font-size: 20px
+		font-weight: 500
+		color: $blueColor
+		opacity: .5
+		display: block
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 30px
+	&--num
+		font-size: 60px
+		font-weight: 600
+		color: $blueColor
+		display: block
+		text-align: center
+		margin-bottom: 30px
+		sup
+			font-weight: 500
+	&--text
+		font-size: 16px
+		opacity: .6
+		font-weight: 400
+		color: $blueColor
+		margin-bottom: 35px
+		span
+			display: block
+			text-align: center
+			margin-bottom: 16px
+	&--link
+		font-size: 18px
+		color: $accent
+		font-weight: 500
+		display: block
+		text-transform: uppercase
+		text-align: center
+		&:hover, &:focus
+			text-decoration: none
+			color: darken($accent, 10%)

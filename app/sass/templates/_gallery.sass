@@ -1,0 +1,22 @@
+//---------------gallery---------------
+
+.gallery
+	.col-md-3,
+	.col-sm-6,
+	.col-xs-6
+		padding: 0
+
+.gallery__item
+	position: relative
+	overflow: hidden
+
+	&:hover
+		.gallery__item--img img
+			transform: scale(1.2)
+	&--img
+		transform: scale(0.9)
+		transition: all .3s
+		img
+			max-width: 100%
+			display: block
+			transition: all .3s

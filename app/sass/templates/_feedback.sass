@@ -1,0 +1,40 @@
+//-------------feedback--------------
+
+.feedback
+	padding-bottom: 155px
+	.anim-f
+		animation-delay: 0.5s
+
+.feed-item
+	margin-top: 85px
+	animation-delay: 0.5s
+	&__wrap
+		border: 1px solid #a2a4a7
+		border-radius: 6px
+		padding: 15px 40px
+		margin-bottom: 30px
+		position: relative
+		&::before, &::after
+			content: ''
+			position: absolute
+			left: 20px
+			bottom: -20px
+			border: 10px solid transparent
+			border-top: 10px solid #a2a4a7
+		&::after
+			border-top: 10px solid white
+			bottom: -19px
+	&__text
+		font-size: 16px
+		color: $blueColor
+		opacity: .8
+		line-height: 2
+	&__name
+		font-size: 18px
+		color: $blueColor
+		display: block
+		font-weight: 500
+	&__job
+		font-size: 16px
+		color: #b4b4b4
+		font-weight: 400
